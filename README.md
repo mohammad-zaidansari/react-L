@@ -15,31 +15,26 @@ State is a unique thing in the react which simply just is getting constantly mon
           className="text-gray-700">This is a basic example of using 
         
 ### Text and Font
-const App = () => {
-  return (
-     className="p-4">
+
+     className="p-4"
       <h1 className="text-4xl font-bold text-blue-600 mb-4">Tailwind CSS with React</h1>
       <p className="text-lg text-gray-700">This is an example of text styling.</p>
       <p className="text-sm text-red-500 mt-2">This is another text example.</p>
     </div>
-  );
-};
+
 
 ### Spacing (Margin and Padding)
-const App = () => {
-  return (
+
     <div className="p-4">
       <div className="m-4 p-4 bg-gray-100 rounded">
         <p className="mb-4">This is an example of margin and padding.</p>
         <p className="mt-4">More content with margin top.</p>
       </div>
     </div>
-  );
-};
+ 
 
 ### Flexbox and Grid
-const App = () => {
-  return (
+
     <div className="p-4">
       <div className="flex space-x-4">
         <div className="flex-1 bg-red-100 p-4">Flex Item 1</div>
@@ -52,13 +47,10 @@ const App = () => {
         <div className="bg-pink-100 p-4">Grid Item 3</div>
       </div>
     </div>
-  );
-};
 
 
 ### Hover, Focus, and Responsive Variants
-const App = () => {
-  return (
+
     <div className="p-4">
       <button className="bg-blue-500 text-white p-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
         Hover and Focus Example
@@ -69,5 +61,4 @@ const App = () => {
         </div>
       </div>
     </div>
-  );
-};
+
