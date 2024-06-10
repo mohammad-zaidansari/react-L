@@ -7,23 +7,17 @@ State is a unique thing in the react which simply just is getting constantly mon
 
 ## CSS Properties in React 
 ### Container and Layout 
-const App = () => {
-  return (
-    <div className="container mx-auto p-4">
-      <div className="flex justify-center items-center h-screen">
-        <div className="bg-white p-8 rounded shadow-lg">
-          <h1 className="text-2xl font-bold mb-4">Welcome to Tailwind CSS</h1>
-          <p className="text-gray-700">This is a basic example of using Tailwind CSS with React.</p>
-        </div>
-      </div>
-    </div>
-  );
-};
 
+     className="container mx-auto p-4"
+       className="flex justify-center items-center h-screen"
+         className="bg-white p-8 rounded shadow-lg"
+         className="text-2xl font-bold mb-4">Welcome to Tailwind CSS
+          className="text-gray-700">This is a basic example of using 
+        
 ### Text and Font
 const App = () => {
   return (
-    <div className="p-4">
+     className="p-4">
       <h1 className="text-4xl font-bold text-blue-600 mb-4">Tailwind CSS with React</h1>
       <p className="text-lg text-gray-700">This is an example of text styling.</p>
       <p className="text-sm text-red-500 mt-2">This is another text example.</p>
