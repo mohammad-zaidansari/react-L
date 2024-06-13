@@ -5,7 +5,37 @@ Component is like a shortening dump your code and make it more modularize so tha
 ## State
 State is a unique thing in the react which simply just is getting constantly monitored and any change in the state rerenders the UI on the web page..
 
-## CSS Properties in React 
+# What is a Hook? 
+Hooks allow us to "hook" into react fetures such as state and lifecycle methods. 
+Example: 
+function FavoriteColor() {
+  const [color, setColor] = useState("red");
+
+  return (
+    <>
+    
+      <h1>My favorite color is {color}!</h1>
+      <button
+        type="button"
+        onClick={() => setColor("blue")}
+      >Blue</button>
+      <button
+        type="button"
+        onClick={() => setColor("red")}
+      >Red</button>
+      <button
+        type="button"
+        onClick={() => setColor("pink")}
+      >Pink</button>
+      <button
+        type="button"
+        onClick={() => setColor("green")}
+      >Green</button>
+    </>
+  );
+}
+
+## CSS Properties in Tailwind 
 ### Container and Layout 
 
      className="container mx-auto p-4"

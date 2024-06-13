@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const [length, setLangth] = useState(8);
-  const [nummber, setNumber] = useState(false);
+  const [nummberAllow, setNumberAllow] = useState(false);
   const [charAllow, setCharAllow] = useState(false);
   const [Password, setPassword] = useState('');
 
@@ -12,26 +12,26 @@ function App() {
   //Logic Part
   const generatorPassword = useCallback(() => {
     let pass = ''
-    let str = 
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    if(nummber) str += "0123456789"
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    if(nummberAllow) str += "0123456789"
     if(charAllow) str += "!@#$%^&*()_+"
 
-    for(let i =1 ; i< length; i++){
+    for(let i =1 ; i <= length; i++){
       const char = Math.floor(Math.random() * str.length + 1 )
       pass += str.charAt(char)
     }
     setPassword(pass)
-  }, [length, nummber, charAllow])
+  }, [length, nummberAllow, charAllow])
 
   useEffect(()=> {
     generatorPassword()
-  },[length, nummber, charAllow] )
+  },[length, nummberAllow, charAllow] )
 
   const copyPasswordToClipboard = () => {
     window.navigator.clipboard.writeText(Password)
     passwoedRef.current?.select()
   }
+
 
 //Styling Part 
   return (
@@ -43,7 +43,7 @@ function App() {
         value={Password}
         className='outline-none w-full py-1 px-3'
         placeholder='Password'
-        readOnly
+        readOnly    
         ref={passwoedRef}
         />
         <button
@@ -51,6 +51,7 @@ function App() {
         className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
         >Copy</button>
       </div>
+
       <div
       className='flex text-sm gap-x-2'
       >
@@ -58,7 +59,7 @@ function App() {
           <input 
           type="range" 
           min={6}
-          max={100}
+          max={18}
           value={length}
           className='cursor-pointer'
           onChange={(e) => setLangth(e.target.value)}
@@ -70,9 +71,9 @@ function App() {
         <div className="flex items-center gap-x-1">
           <input 
           type="checkbox" 
-          defaultChecked={Number}
+          defaultChecked={nummberAllow}
           onChange={() => {
-            setNumber((prev) => !prev )
+            setNumberAllow((prev) => !prev )
           }}
           name="" 
           id="" 
