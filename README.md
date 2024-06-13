@@ -8,9 +8,10 @@ State is a unique thing in the react which simply just is getting constantly mon
 # What is a Hook? 
 Hooks allow us to "hook" into react fetures such as state and lifecycle methods. 
 ### Example: 
-<!-- function FavoriteColor() {
+function FavoriteColor() {
   const [color, setColor] = useState("red");
   return (
+
     <>
       <h1>My favorite color is {color}!</h1>
       <button
@@ -30,8 +31,9 @@ Hooks allow us to "hook" into react fetures such as state and lifecycle methods.
         onClick={() => setColor("green")}
       >Green</button>
     </>
+    
   );
-} -->
+}
 
 ## CSS Properties in Tailwind 
 ### Container and Layout 
