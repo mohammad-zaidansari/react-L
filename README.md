@@ -31,9 +31,21 @@ function FavoriteColor() {
         onClick={() => setColor("green")}
       >Green</button>
     </>
-    
+
   );
 }
+
+# React useState Hook
+The React useState Hook allows us to track state in a fuction component.
+State generally refers to data or properties that need to be tracking in an application. 
+
+
+
+
+
+
+
+
 
 ## CSS Properties in Tailwind 
 ### Container and Layout 
