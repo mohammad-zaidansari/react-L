@@ -3,6 +3,7 @@ import Product from './Product';
 import Description from './Description';
 import Title from './Title';
 import ProductTab from './ProductTab';
+import MsgBox from './MsgBox';
 
 
 
@@ -10,6 +11,7 @@ import ProductTab from './ProductTab';
 function App() {
   return (
     <>
+    <MsgBox userName="Mohammad" textColor="purple"/>
     <ProductTab/>
     </>
  
