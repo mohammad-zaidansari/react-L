@@ -1,16 +1,21 @@
 import './Product.css'
+import Price from './Price'
+import Button from './Button';
+import HoverButton from './Hover';
 
-function Product({title, price , description = "this is a Good product", features}){
-    
-    let isDescount = price > 3000;
-    let style = {backgroundColor: isDescount ? "pink" : "green"};
+function Product({ title, idx}){
+
+    let oldPrice = ["12,495", "11,900", "1,599", "599"];
+    let newPrice = ["8,999", "9,100", "899", "278"];
+    let description = ["8,000 DPI", "intuitive surface", "designed for iPad Pro", "wireless"]
 
     return(
-        <div className="Product" style={style}>
+        <div className="Product" >
         <h3>{title}</h3>
-        <h5>Price: {price}</h5>
-        { isDescount && <p>Descount is 5%</p>}
-        {/* { price > 3000? <p>Descount is 5%</p>: null} */}
+        <p>{description[idx]}</p>
+        <Price oldPrice={oldPrice[idx]} newPrice={newPrice[idx]}/>
+        <Button/>
+        <HoverButton/>
         </div>
     )
 }
