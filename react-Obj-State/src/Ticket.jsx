@@ -15,4 +15,4 @@ export default function Ticket({ ticket }){
         </div>
         </>
     )
-}
+}  

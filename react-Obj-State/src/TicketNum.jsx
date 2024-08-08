@@ -5,4 +5,4 @@ export default function TicketNum({num}){
         <div className="TicketNum">{num}</div>
     )
 
-}
+}  

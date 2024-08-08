@@ -1,6 +1,11 @@
 import './App.css'
 import { sum } from './helper.js'
 import Lottery from './Lottery.jsx'
+import InputValue from './InputValue.jsx'
+import MultipleInput from './MultipleInput.jsx'
+import CommentForm from './CommentForm.jsx'
+import CounterUseEffect from './CounterUseEffect.jsx'
+import Joker from './Joker.jsx'
 
 function App() {
 
@@ -11,7 +16,7 @@ function App() {
 
   return (
     <>
-      <Lottery n={3} winCondition={winCondition}/>
+      <Joker/>
     </>
   )
 }

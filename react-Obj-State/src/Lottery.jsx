@@ -11,7 +11,7 @@ export default function Lottery({n, winCondition}) {
         setTicket(genTicket(n))
     }
     
-
+  
     return (
         <>
             <h1>Lottery Game!</h1>

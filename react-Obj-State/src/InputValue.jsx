@@ -15,7 +15,8 @@ export default function InputValue () {
     return(
         <>
         <h4>Input Value</h4>
-        <input type="text" placeholder="Enter you name" value={val} onChange={update} /> <br />
+        <label htmlFor="username">Full name</label>
+        <input type="text" id="username" placeholder="Enter you name" value={val} onChange={update} /> <br />
         <button onClick={click}>Show in alert</button>
         </>
     )
